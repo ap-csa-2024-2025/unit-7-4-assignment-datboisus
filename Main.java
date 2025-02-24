@@ -9,9 +9,11 @@ public class Main
     ArrayList<String> input = new ArrayList<String>();
 
     String word = "";
+    System.out.println("Enter words. enter \"STOP\" to stop");
     while (!word.equals("STOP"))
     {
-      System.out.println("Implement me!");
+      word = sc.nextLine();
+      input.add(word);
     }
   }
 
@@ -22,6 +24,20 @@ public class Main
    */
   public static int countSecondInitial(ArrayList<String> arr, String letter)
   {
+    int count = 0;
+    for (String word : arr)
+    {
+      if (word != null && word.length() >= 2)
+      {
+        String secondLetter = word.substring(1,2);
+        System.out.println("The word is " + word);
+        System.out.println("The second letter is " + secondLetter);
+        if(word.substring(1,2).equals(letter))
+        {
+          count++;
+        }
+      }
+    }
     return 0;
   }
 
@@ -31,6 +47,11 @@ public class Main
    */
   public static int searchSecond(final ArrayList<String> arr, String target)
   {
+    int search = 0;
+    for (String word : arr)
+    {
+      if ()
+    }
     return -1;
   }
 }
