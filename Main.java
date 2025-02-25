@@ -50,7 +50,14 @@ public class Main
     int search = 0;
     for (String word : arr)
     {
-      if ()
+      if (arr[i] == target)
+      {
+        count++;
+        if (count == 2)
+        {
+          return;
+        }
+      }
     }
     return -1;
   }
